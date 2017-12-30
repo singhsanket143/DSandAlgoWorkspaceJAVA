@@ -1,0 +1,18 @@
+package lecture5;
+
+import java.util.Scanner;
+
+public class square_root_of_n {
+
+	public static void main(String[] args) {
+		System.out.println("entder number");
+		Scanner scn= new Scanner(System.in);
+		double n=scn.nextDouble();
+		
+		double a=(int)Math.pow(n, 0.5);
+		
+		System.out.println(a);
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;lecture5/src/lecture5/lower_an_uppercase_character_check.java&apos;" deleteContents="false" description="Delete resource &apos;lecture5/src/lecture5/lower_an_uppercase_character_check.java&apos;" element1="/lecture5/src/lecture5/lower_an_uppercase_character_check.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1477055289201"/>
+</session>

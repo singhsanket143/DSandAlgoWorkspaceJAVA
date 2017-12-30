@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lecture8/src/lecture8/Bubblesort.java&apos; to &apos;Arrayops.java&apos;" description="Rename resource &apos;Bubblesort.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/lecture8/Bubblesort.java" name="Arrayops.java" stamp="1476883274447" updateReferences="true"/>
+</session>

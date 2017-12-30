@@ -1,0 +1,24 @@
+
+public class time_and_space_complexity_1 {
+
+	public static void main(String[] args) {
+		System.out.println(getpv(3, 4));
+
+	}
+
+	public static int getpv(int x, int n) {
+		int rv=0;
+		int powx=x;
+		while(n>0){
+			rv+=powx*n;
+			powx=powx*x;
+			n--;
+		}
+		return rv;
+	}
+	
+	public static int countpalindromicss(String str){
+		return 0;
+	}
+
+}

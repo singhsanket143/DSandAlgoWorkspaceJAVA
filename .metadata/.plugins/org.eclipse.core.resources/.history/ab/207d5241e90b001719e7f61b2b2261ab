@@ -1,0 +1,57 @@
+package Implementation;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ManasaAndStones {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		for (int k = 0; k < n; k++) {
+			int s = scn.nextInt();
+			int x = scn.nextInt();
+			int y = scn.nextInt();
+
+			call(s - 1, x, y, 0);
+			arr.sort(null);
+			int[] a = new int[arr.size()];
+			for (int i = 0; i < arr.size(); i++) {
+				a[i] = arr.get(i);
+			}
+
+			for (int i = 0; i < arr.size() - 1; i++) {
+
+				if (a[i] == a[i + 1]) {
+					continue;
+				} else {
+					System.out.print(arr.get(i) + " ");
+
+				}
+				if (i == a.length - 2) {
+					if (a[a.length - 2] != a[a.length - 1]) {
+						System.out.print(a[a.length - 1]);
+						break;
+					}
+				}
+
+			}
+			arr = new ArrayList<>();
+			System.out.println();
+		}
+	}
+
+	public static ArrayList<Integer> arr = new ArrayList<>();
+
+	public static void call(int n, int a, int b, int osf) {
+		if (n == 0) {
+			arr.add(osf);
+			return;
+		}
+		call(n - 1, a, b, osf + a);
+		call(n - 1, a, b, osf + b);
+
+		return;
+	}
+
+}

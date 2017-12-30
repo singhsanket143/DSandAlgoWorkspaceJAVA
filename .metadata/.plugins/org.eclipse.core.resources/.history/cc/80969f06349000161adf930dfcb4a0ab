@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class logarithm {
+
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.println("enter the number");
+		int a = scn.nextInt();
+		Scanner scn1=new Scanner(System.in);
+		System.out.println("enter the base");
+		long b = scn1.nextInt(),i,j;
+		double loga=0,logb=0,val1,val2,logba;
+		for(i=1;i<=a;i++){
+			val1=((Math.pow(-1,i-1))*(Math.pow(a-1,125)))/i;
+			loga=loga+val1;
+		}
+		for(j=1;j<=b;j++){
+			val2=((Math.pow(-1,j-1))*(Math.pow(b-1,125)))/j;
+			logb=logb+val2;
+		}
+		logba=loga/logb;
+		System.out.println(logba);
+	}
+}

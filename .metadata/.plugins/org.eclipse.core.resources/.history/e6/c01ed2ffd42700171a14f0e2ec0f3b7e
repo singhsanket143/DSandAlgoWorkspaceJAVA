@@ -1,0 +1,35 @@
+package Strings;
+
+import java.util.Scanner;
+
+public class SherlockAndValidString {
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		String str=scn.next();
+		int[] arr=new int[26];
+		int min=Integer.MIN_VALUE;
+		for(int i=0;i<str.length();i++){
+			arr[str.charAt(i)-'a']++;
+			if(arr[str.charAt(i)-'a']>min){
+				min=arr[str.charAt(i)-'a'];
+			}
+		}
+		int c=0;
+		for(int i=0;i<26;i++){
+			if(c>=2){
+				break;
+			}
+			if(arr[i]<min){
+				c++;
+			}
+		}
+		if(c>=2)
+			System.out.println("no");
+		else
+			System.out.println("yes");
+		
+	}
+
+}

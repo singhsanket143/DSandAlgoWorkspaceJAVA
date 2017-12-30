@@ -1,0 +1,42 @@
+package graphs;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class graph {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		int e =scn.nextInt();
+		int[][] edges = new int[n][n];
+		for(int i=0;i<e;i++){
+			int f=scn.nextInt();
+			int s=scn.nextInt();
+			edges[f][s]=1;
+			edges[s][f]=1;
+		}
+		bfs(edges,n,0);
+	}
+	
+	public static void bfs(int[][] edges,int n,int start){
+		LinkedList<Integer> queue = new LinkedList<>();
+		boolean[] visited = new boolean[n];
+		queue.addLast(start);
+		visited[start]=true;
+		while(!queue.isEmpty()) {
+			int currentVertex = queue.removeFirst();
+			System.out.print(currentVertex+" ");
+			for(int i=0;i<n;i++){
+				if(i==currentVertex)
+					continue;
+				if(edges[currentVertex][i]==1 && !visited[i]){
+					queue.addLast(i);
+					visited[i]=true;
+				}
+			}
+		}
+	}
+
+}

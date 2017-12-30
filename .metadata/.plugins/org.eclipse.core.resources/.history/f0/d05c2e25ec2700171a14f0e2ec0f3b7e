@@ -1,0 +1,69 @@
+package Strings;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class FindStrings {
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		ArrayList<String> arr = new ArrayList<>();
+		for (int m = 0; m < n; m++) {
+			String str = scn.next();
+			ArrayList<String> popmap = new ArrayList<>();
+			popmap = printsubstrings(str);
+			for(int i=0;i<popmap.size();i++){
+				arr.add(popmap.get(i));
+			}
+		}
+		String[] x=new String[arr.size()];
+		for(int i=0;i<arr.size();i++){
+			x[i]=arr.get(i);
+		}
+		bubblesort(x);
+		int q=scn.nextInt();
+		for(int i=0;i<q;i++){
+			int a=scn.nextInt();
+			if(a>arr.size()){
+				System.out.println("INVALID");
+			} else{
+				System.out.println(x[a-1]);
+			}
+		}
+	}
+	public static HashMap<String, String> map = new HashMap<>();
+	public static ArrayList<String> printsubstrings(String str) {
+		
+		ArrayList<String> a = new ArrayList<>();
+		System.out.println(str.substring(0, 0));
+		for (int j = 0; j < str.length(); j++) {
+			for (int i = j + 1; i <= str.length(); i++) {
+				if (!map.containsKey(str.substring(j, i))) {
+					a.add(str.substring(j, i));
+					map.put(str.substring(j, i), str.substring(j, i));
+				}
+
+			}
+		}
+		return a;
+	}
+
+	public static <String extends Comparable<String>> void bubblesort(String[] arr) {
+		int counter = 1;
+		while (counter <= arr.length - 1) {
+			for (int i = 0; i < arr.length - counter; i++) {
+				if (arr[i + 1].compareTo(arr[i]) < 0) {
+					String temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
+				}
+
+			}
+			counter++;
+		}
+	}
+}

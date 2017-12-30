@@ -1,0 +1,64 @@
+package Strings;
+
+import java.util.Scanner;
+
+public class bearAndSteadyGene {
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		String str = scn.next();
+		boolean bool = check(str, n);
+		if (bool) {
+			System.out.println("0");
+		} else {
+			int c = 0,d=0;
+			for (int i = 0; i < str.length();i++) {
+				for (int j = c; j < str.length();) {
+					String sub = str.substring(j);
+
+					boolean b = check(sub, n);
+					if (!b) {
+						j++;
+					} else {
+						c = j;
+						break;
+					}
+				}
+				if(c!=0){
+					break;
+				}
+			}
+			for(int i=0;i<str.length();i++){
+				for(int j=i+1;j<str.length();j++){
+					String y=str.substring(0,j);
+					if(check(y, n)){
+						d=j;
+						break;
+					}
+				}
+			}
+			String x=str.substring(0,d)+str.substring(c);
+			System.out.println(n-x.length());
+		}
+	}
+
+	public static boolean check(String str, int n) {
+		int[] arr = new int[26];
+		for (int i = 0; i < str.length(); i++) {
+			arr[str.charAt(i) - 'A']++;
+		}
+		boolean b = false;
+		for (int i = 0; i < 26; i++) {
+			if (str.length()!=0 && (arr[i] == (n / 4)  || arr[i]  < (n / 4)) ) {
+				b = true;
+			} else {
+				b = false;
+				break;
+			}
+		}
+		return b;
+	}
+
+}

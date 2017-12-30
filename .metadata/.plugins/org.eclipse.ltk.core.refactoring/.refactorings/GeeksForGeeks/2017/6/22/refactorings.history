@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GeeksForGeeks/src/DynamicProgramming&apos; to &apos;BitManipulation&apos;" description="Rename resource &apos;DynamicProgramming&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/DynamicProgramming" name="BitManipulation" stamp="1496418418476" updateReferences="true"/>
+</session>

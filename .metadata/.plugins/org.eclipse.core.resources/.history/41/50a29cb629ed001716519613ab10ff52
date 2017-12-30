@@ -1,0 +1,27 @@
+package fenwickTree;
+
+public class coderRating {
+
+	public class coder implements Comparable<coder> {
+		int x;
+		int y;
+		int index;
+
+		coder(int x, int y, int index) {
+			this.x = x;
+			this.y = y;
+			this.index = index;
+		}
+
+		@Override
+		public int compareTo(coder o) {
+			return this.y - o.y;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

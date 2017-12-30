@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Practice/src/TheGoodSetsBetter.java&apos; to &apos;subsetwithSameGCD.java&apos;" description="Rename resource &apos;TheGoodSetsBetter.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/TheGoodSetsBetter.java" name="subsetwithSameGCD.java" stamp="1508492034328" updateReferences="true"/>
+</session>

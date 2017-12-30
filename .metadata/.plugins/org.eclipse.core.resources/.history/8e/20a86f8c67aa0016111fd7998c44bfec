@@ -1,0 +1,31 @@
+
+public class time_and_space_complexity_1 {
+
+	public static void main(String[] args) {
+		System.out.println(getpv(3, 2));
+		System.out.println(countpalindromicss("abbcbabc"));
+	}
+
+	public static int getpv(int x, int n) {
+		int rv=0;
+		int powx=x;
+		while(n>0){
+			rv+=powx*n;
+			powx=powx*x;
+			n--;
+		}
+		return rv;
+	}
+	
+	public static int countpalindromicss(String str){
+		int count=0;
+		for(int orbit=0;orbit<=str.length()-1;orbit++){
+			if((str.substring(orbit-1, orbit)==str.substring(orbit,orbit+1)) && orbit-1!=0 && orbit+1!=str.length()){
+				count++;
+			}
+		}
+		return count;
+		
+	}
+
+}

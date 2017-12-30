@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lecture 28/src/story/genericlinkedlist.java&apos; to &apos;LinkedList.java&apos;" description="Rename resource &apos;genericlinkedlist.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/story/genericlinkedlist.java" name="LinkedList.java" stamp="1485057833632" updateReferences="true"/>
+</session>

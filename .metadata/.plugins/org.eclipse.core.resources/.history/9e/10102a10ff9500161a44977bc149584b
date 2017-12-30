@@ -1,0 +1,83 @@
+package lecture8;
+
+import java.util.Arrays;
+
+public class Bubblesort {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 5, 9, 2, 5, 1, 8, 6 };
+		display(arr);
+		// bubblesort(arr);
+		// selectionsort(arr);
+
+		insertionsort(arr);
+		display(arr);
+	}
+
+	public static void bubblesort(int[] arr) {
+		int counter = 1;
+		while (counter <= arr.length - 1) {
+			for (int i = 0; i < arr.length - counter; i++) {
+				if (arr[i + 1] < arr[i]) {
+					// swap
+					Swap(arr, i + 1, i);
+				}
+
+			}
+			counter++;
+		}
+	}
+
+	public static void Swap(int[] arr, int i, int j) {
+		// System.out.println(a + ", " + b);
+
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+
+		// System.out.println(arr[i] + ", " +arr[j]);
+	}
+
+	public static void display(int[] arr) {
+		for (int val : arr) {
+			System.out.print(val + ", ");
+		}
+		System.out.println("end");
+	}
+
+	public static void selectionsort(int[] arr) {
+		int counter = 1;
+		while (counter <= arr.length - 1) {
+			for (int i = counter; i < arr.length; i++) {
+				if (arr[i] < arr[counter - 1]) {
+					// swap
+					Swap(arr, counter - 1, i);
+				}
+
+			}
+			counter++;
+		}
+	}
+
+	public static void insertionsort(int[] arr) {
+		int counter = 1;
+		while (counter <= arr.length - 1) {
+			for (int i = counter; i > 0; i--) {
+				if (arr[i] < arr[i - 1]) {
+					// swap
+					Swap(arr, i, i - 1);
+				} else
+					break;
+
+			}
+			counter++;
+		}
+
+	}
+
+	public static void intersection(int[] arr1,int[] arr2){
+		int i=0,j=0;
+		
+	}
+}

@@ -1,0 +1,47 @@
+package fenwickTree;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class coderRating {
+
+	public class coder {
+		int x;
+		int y;
+		int index;
+
+		coder(int x, int y, int index) {
+			this.x = x;
+			this.y = y;
+			this.index = index;
+		}
+		@Override
+		public boolean equals(Object other) {
+			coder o = (coder)other;
+			if(this.x == o.x){
+				return this.y < o.y;
+			}
+			return this.x < o.x;
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Scanner scn = new Scanner(System.in);
+		int n = scn.nextInt();
+		coder[] coder = new coder[n];
+		for (int i = 0; i < n; i++) {
+			int x = scn.nextInt();
+			int y = scn.nextInt();
+			coderRating c = new coderRating();
+			coder[i] = c.new coder(x, y, i);
+		}
+		Arrays.sort(coder);
+		for(int i=0;i<coder.length;i++){
+			System.out.println(coder[i].x+","+coder[i].y+","+coder[i].index);
+		}
+		
+		
+	}
+
+}

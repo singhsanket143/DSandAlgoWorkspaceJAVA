@@ -1,0 +1,23 @@
+package WeekOfCode31;
+
+import java.util.Scanner;
+
+public class CollidongCircles {
+
+	public static void main(String[] args) {
+
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt();
+		int k=scn.nextInt();
+		int[] arr= new int[n];
+		int sum=0;
+		for(int i=0;i<arr.length;i++){
+			arr[i]=scn.nextInt();
+			sum+=arr[i];
+		}
+		if(k==n-1){
+			System.out.println(Math.PI*sum*sum);
+		}
+	}
+
+}

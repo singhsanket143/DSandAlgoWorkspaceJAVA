@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CodeChef/src/novChallenge/chefAndSubArray.java&apos; to &apos;SegmentTree.java&apos;" description="Rename resource &apos;chefAndSubArray.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/novChallenge/chefAndSubArray.java" name="SegmentTree.java" stamp="1510330726059" updateReferences="true"/>
+</session>

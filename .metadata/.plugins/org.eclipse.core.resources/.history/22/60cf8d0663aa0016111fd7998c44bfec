@@ -1,0 +1,17 @@
+
+public class time_and_space_complexity_1 {
+
+	public static void main(String[] args) {
+		System.out.println(getpv(3, 4));
+
+	}
+	public static int getpv(int x,int n){
+		int retval=0,result=0;
+		for(int i=1;i<=n;i++){
+			retval=(int) Math.pow((i*x),n--);
+			result+=retval;
+		}
+		return result;
+	}
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Lecture4/src/to_print_all_armstrong_no_from_100_to_999.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="to_print_all_armstrong_no_from_100_to_999"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lecture4"/>
+</launchConfiguration>

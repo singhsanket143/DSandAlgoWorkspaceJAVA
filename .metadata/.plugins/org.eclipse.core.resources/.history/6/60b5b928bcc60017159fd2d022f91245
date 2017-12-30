@@ -1,0 +1,130 @@
+import java.util.Scanner;
+
+public class SegmentTree {
+	private class Node {
+		int data;
+		int si;
+		int ei;
+		Node left;
+		Node right;
+	}
+
+	private Node root;
+	private int size;
+
+	public SegmentTree(int[] arr) {
+		root = construct(arr, 0, arr.length - 1);
+	}
+
+	private Node construct(int[] arr, int si, int ei) {
+		if (si == ei) {
+			Node base = new Node();
+			this.size++;
+
+			base.data = arr[si];
+			base.si = base.ei = si;
+			return base;
+		}
+		int mid = (si + ei) / 2;
+
+		Node node = new Node();
+		this.size++;
+		node.si = si;
+		node.ei = ei;
+
+		node.left = construct(arr, si, mid);
+		node.right = construct(arr, mid + 1, ei);
+
+		node.data = node.left.data * node.right.data;
+
+		return node;
+	}
+
+	public int query(int qsi, int qei) {
+		return query(root, qsi, qei);
+
+	}
+
+	private int query(Node node, int qsi, int qei) {
+		// node entirely in the query
+		if (node.si >= qsi && node.ei <= qei) {
+			return node.data;
+		}
+		// node entirely out of query
+		else if (node.ei < qsi || node.si > qei) {
+			return 1;
+		}
+		// overlap
+		else {
+			int lsc = query(node.left, qsi, qei);
+			int rsc = query(node.right, qsi, qei);
+			return (lsc * rsc);
+		}
+
+	}
+
+	public void update(int idx, int data) {
+		update(root, idx, data);
+	}
+
+	private void update(Node node, int idx, int data) {
+
+		if (node.si == idx && node.ei == idx) {
+			node.data = data;
+			return;
+		}
+
+		int mid = (node.si + node.ei) / 2;
+		if (idx > mid) {
+			update(node.right, idx, data);
+		} else {
+			update(node.left, idx, data);
+		}
+
+		node.data = (node.left.data * node.right.data);
+	}
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int t = scn.nextInt();
+		while (t-- > 0) {
+			int n = scn.nextInt();
+			int p = scn.nextInt();
+			int q = scn.nextInt();
+			int[] A = new int[n];
+			for (int i = 0; i < n; i++) {
+				A[i] = scn.nextInt();
+				A[i]%=p;
+			}
+			SegmentTree tree=new SegmentTree(A);
+			int[] arr = new int[(int) Math.floor(q / 64) + 2];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = scn.nextInt();
+			}
+			int x=0;
+			int li=0,ri=0;
+			for (int i = 0; i < arr.length; i++) {
+				
+				if (i % 64 == 0) {
+					li=arr[i/64]%n+x%n;
+					li%=n;
+					ri=arr[i/64+1]%n+x%n;
+					ri%=n;
+				} else {
+					li=(li%n+x%n)%n;
+					ri=(ri%n+x%n)%n;
+				}
+				if(li>ri){
+					int temp=li;
+					li=ri;
+					ri=temp;
+					
+				}
+				int a=tree.query(li, ri);
+				a%=p;
+				x=(a%p+1)%p;
+			}
+			System.out.println(x%p);
+		}
+	}
+}

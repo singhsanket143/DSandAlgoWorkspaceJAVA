@@ -1,0 +1,36 @@
+package Strings;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class FindStrings {
+
+	public static void main(String[] args) {
+
+		Scanner scn=new Scanner(System.in);
+		int n=scn.nextInt();
+		ArrayList<String> arr=new ArrayList<>();
+		for(int i=0;i<n;i++){
+			String str=scn.next();
+			HashMap<String, String> popmap=new HashMap<>();
+			popmap=printsubstrings(str);
+			
+		}
+	}
+	
+	public static HashMap<String, String> printsubstrings(String str) {
+		HashMap<String, String> map =new HashMap<>();
+		System.out.println(str.substring(0, 0));
+		for (int j = 0; j < str.length(); j++) {
+			for (int i = j + 1; i <= str.length(); i++) {
+
+				map.put(str.substring(j, i), str.substring(j, i))
+
+			}
+		}
+		return map;
+	}
+
+}

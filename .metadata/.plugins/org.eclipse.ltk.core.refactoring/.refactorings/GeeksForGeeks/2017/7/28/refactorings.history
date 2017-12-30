@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GeeksForGeeks/src/DynamicProgramming/CoinChange.java&apos; to &apos;MinCoinChange.java&apos;" description="Rename resource &apos;CoinChange.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/DynamicProgramming/CoinChange.java" name="MinCoinChange.java" stamp="1499939765996" updateReferences="true"/>
+</session>

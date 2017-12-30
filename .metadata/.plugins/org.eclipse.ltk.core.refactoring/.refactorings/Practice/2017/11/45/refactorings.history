@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Practice/src/NumberThoery2/modRecursive.java&apos; to &apos;MatrixExponentiationRecursive.java&apos;" description="Rename resource &apos;modRecursive.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/NumberThoery2/modRecursive.java" name="MatrixExponentiationRecursive.java" stamp="1510243066780" updateReferences="true"/>
+</session>
