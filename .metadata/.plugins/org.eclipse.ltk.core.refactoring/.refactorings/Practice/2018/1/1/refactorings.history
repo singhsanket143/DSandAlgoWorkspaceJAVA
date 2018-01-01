@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Practice/src/SegmentTree/SegmentTree.java&apos; to &apos;SegmentTreeSum.java&apos;" description="Rename resource &apos;SegmentTree.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SegmentTree/SegmentTree.java" name="SegmentTreeSum.java" stamp="1514836087359" updateReferences="true"/>
+</session>

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyle"/>
-<fullyQualifiedTypeName name="javax.naming.spi.ResolveResult"/>
-<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
-<fullyQualifiedTypeName name="Backtracking.sudoku"/>
 <fullyQualifiedTypeName name="java.security.acl.Group"/>
 <fullyQualifiedTypeName name="Array.mergetwosortedarrays"/>
 <fullyQualifiedTypeName name="Implementation.biggerbetter"/>
@@ -49,15 +45,19 @@
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="SegmentTree.pair"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="Lecture32.Graph"/>
 <fullyQualifiedTypeName name="fenwickTree.coderRating.coder"/>
 <fullyQualifiedTypeName name="fenwickTree.coderRating"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="SegmentTree.SegmentTreeEvenOdd.OddEven"/>
+<fullyQualifiedTypeName name="SegmentTree.SegmentTreeMaxSumPair"/>
+<fullyQualifiedTypeName name="SegmentTree.SegmentTreeMaxSumPair.node"/>
+<fullyQualifiedTypeName name="SegmentTree.SegmentTreeEvenOdd"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>
