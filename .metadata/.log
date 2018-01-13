@@ -147,3 +147,470 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2018-01-11 20:03:07.686
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-11 20:36:04.214
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-11 20:36:04.221
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-11 21:26:27.716
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-01-12 20:06:07.525 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 20:06:56.840
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-12 20:42:51.238
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-12 20:42:51.246
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-12 20:44:46.276
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 01:39:20.430
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 01:39:20.432
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-01-13 19:34:55.383 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 19:35:05.732
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 19:59:45.245
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 19:59:45.255
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 20:18:14.536
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-13 20:18:14.537
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-13 20:25:26.165
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\charsets.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\dnsns.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunpkcs11.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunmscapi.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\resources.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\jfxrt.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\localedata.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\zipfs.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\jaccess.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\access-bridge-64.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\nashorn.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\cldrdata.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunec.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunjce_provider.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jfr.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jce.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jsse.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-13 22:40:09.927
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-01-14 01:26:48.635 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 01:26:57.727
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 01:34:06.407
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 01:34:06.417
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 01:48:37.191
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 01:48:37.194
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-14 01:53:15.367
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)

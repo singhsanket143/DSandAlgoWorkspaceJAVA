@@ -7,11 +7,11 @@ public class MaxContiguousSubarray {
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt();
-		int[] arr = new int[n];
-		for (int i = 0; i < n; i++) {
-			arr[i] = scn.nextInt();
-		}
+//		int n = scn.nextInt();
+		int[] arr = {24, -29, 23,24, -29, 23};
+//		for (int i = 0; i < n; i++) {
+//			arr[i] = scn.nextInt();
+//		}
 		System.out.println("sum of max subarray is" + maxSubarray(arr));
 		printmaxSubarray(arr);
 	}

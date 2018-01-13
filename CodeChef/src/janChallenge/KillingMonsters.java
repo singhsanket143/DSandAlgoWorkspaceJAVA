@@ -1,9 +1,11 @@
 package janChallenge;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class KillingMonsters {
 
+	public static PrintWriter pw=new PrintWriter(System.out);
 	public static void main(String[] args) {
 
 		Scanner scn = new Scanner(System.in);
@@ -30,7 +32,7 @@ public class KillingMonsters {
 				updateTree(arr, tree, 0, arr.length-1, 1, i, y);
 			}
 		} else {
-			int p = (int)Math.pow(2,bits);
+			int p = largest_power_of_two(x);
 			updateTree(arr, tree, 0, arr.length-1, 1, p, y);
 			if(x<arr.length && x!=p)
 				updateTree(arr, tree, 0, arr.length-1, 1, x, y);
@@ -38,7 +40,18 @@ public class KillingMonsters {
 //		if(x<arr.length) {
 //			updateTree(arr, tree, 0, arr.length-1, 1, x, y);
 //		}
-		System.out.println(tree[1]);
+		pw.println(tree[1]);
+		pw.flush();
+	}
+	
+	public static int largest_power_of_two(int N) {
+		N = N|(N>>1);
+		N = N|(N>>2);
+		N = N|(N>>4);
+		N = N|(N>>8);
+		N = N|(N>>16);
+		
+		return (N+1)>>1;
 	}
 	
 	public static int brianKernighan(int num) {
