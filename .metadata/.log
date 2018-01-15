@@ -614,3 +614,479 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-01-14 08:14:08.236 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 08:14:39.843
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-01-14 15:08:50.807 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 15:08:59.899
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2018-01-14 15:22:25.033
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: java.nio.channels.ClosedByInterruptException
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:199)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:75)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:583)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.BinaryType.getClassFileInfo(BinaryType.java:230)
+	at org.eclipse.jdt.internal.core.BinaryType.getChildren(BinaryType.java:193)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:275)
+	at org.eclipse.jdt.internal.core.BinaryType.getMethods(BinaryType.java:462)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethodInType(MethodOverrideTester.java:195)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$1.visit(JavadocContentAccess2.java:577)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDocInterfaces(JavadocContentAccess2.java:238)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDoc(JavadocContentAccess2.java:192)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.createSuperMethodReferences(JavadocContentAccess2.java:588)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.handleSuperMethodReferences(JavadocContentAccess2.java:1079)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.elementToHTML(JavadocContentAccess2.java:1064)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.toHTML(JavadocContentAccess2.java:866)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.javadoc2HTML(JavadocContentAccess2.java:784)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:671)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:534)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:757)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:675)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:667)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:164)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:386)
+	at jdk.internal.jrtfs.JrtFileSystem$1.read(JrtFileSystem.java:376)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:65)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:109)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.base/java.nio.file.Files.read(Files.java:3160)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3213)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileBytes(JRTUtil.java:330)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileContent(JRTUtil.java:311)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getClassfileContent(JRTUtil.java:153)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:187)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:226)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:187)
+	... 27 more
+Caused by: java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:386)
+	at jdk.internal.jrtfs.JrtFileSystem$1.read(JrtFileSystem.java:376)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:65)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:109)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.base/java.nio.file.Files.read(Files.java:3160)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3213)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileBytes(JRTUtil.java:330)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileContent(JRTUtil.java:311)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getClassfileContent(JRTUtil.java:153)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:187)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:226)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:187)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:75)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:583)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.BinaryType.getClassFileInfo(BinaryType.java:230)
+	at org.eclipse.jdt.internal.core.BinaryType.getChildren(BinaryType.java:193)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:275)
+	at org.eclipse.jdt.internal.core.BinaryType.getMethods(BinaryType.java:462)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethodInType(MethodOverrideTester.java:195)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$1.visit(JavadocContentAccess2.java:577)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDocInterfaces(JavadocContentAccess2.java:238)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDoc(JavadocContentAccess2.java:192)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.createSuperMethodReferences(JavadocContentAccess2.java:588)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.handleSuperMethodReferences(JavadocContentAccess2.java:1079)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.elementToHTML(JavadocContentAccess2.java:1064)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.toHTML(JavadocContentAccess2.java:866)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.javadoc2HTML(JavadocContentAccess2.java:784)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:671)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:534)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:757)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:675)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:667)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:164)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 985 2018-01-14 15:22:25.034
+!MESSAGE java.nio.channels.ClosedByInterruptException
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:386)
+	at jdk.internal.jrtfs.JrtFileSystem$1.read(JrtFileSystem.java:376)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:65)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:109)
+	at java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:103)
+	at java.base/java.nio.file.Files.read(Files.java:3160)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3213)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileBytes(JRTUtil.java:330)
+	at org.eclipse.jdt.internal.compiler.util.JrtFileSystem.getClassfileContent(JRTUtil.java:311)
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.getClassfileContent(JRTUtil.java:153)
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:187)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:226)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:187)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:75)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:583)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:320)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:306)
+	at org.eclipse.jdt.internal.core.BinaryType.getClassFileInfo(BinaryType.java:230)
+	at org.eclipse.jdt.internal.core.BinaryType.getChildren(BinaryType.java:193)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:275)
+	at org.eclipse.jdt.internal.core.BinaryType.getMethods(BinaryType.java:462)
+	at org.eclipse.jdt.internal.corext.util.MethodOverrideTester.findOverriddenMethodInType(MethodOverrideTester.java:195)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$1.visit(JavadocContentAccess2.java:577)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDocInterfaces(JavadocContentAccess2.java:238)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2$InheritDocVisitor.visitInheritDoc(JavadocContentAccess2.java:192)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.createSuperMethodReferences(JavadocContentAccess2.java:588)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.handleSuperMethodReferences(JavadocContentAccess2.java:1079)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.elementToHTML(JavadocContentAccess2.java:1064)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.toHTML(JavadocContentAccess2.java:866)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.javadoc2HTML(JavadocContentAccess2.java:784)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:671)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:534)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:757)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:675)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:667)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:164)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 15:41:26.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 15:41:26.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-01-14 21:14:29.468 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 21:14:41.776
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 21:47:42.718
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 21:47:42.733
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-14 21:47:47.940
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\charsets.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\dnsns.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunpkcs11.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunmscapi.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\resources.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\jfxrt.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\localedata.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\zipfs.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\jaccess.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\access-bridge-64.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\nashorn.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\cldrdata.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunec.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\ext\sunjce_provider.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jfr.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jce.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\jsse.jar
+  [-] /Users/sanketsingh/eclipse/jee-oxygen/Eclipse.app/Contents/MacOS/C:\Program Files\Java\jre1.8.0_144\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-01-14 21:51:34.770 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 21:51:42.390
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-01-14 21:53:12.064 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-14 21:53:18.946
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 21:54:06.775
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 21:54:06.781
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 22:35:00.744
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-14 22:35:00.745
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-14 22:56:32.968
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+!SESSION 2018-01-15 15:49:01.074 -----------------------------------------------
+eclipse.buildId=4.7.2.M20171130-0510
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sanketsingh/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 15:54:59.311
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-15 15:57:16.898
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-15 15:57:16.906
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-15 15:59:30.459
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-15 15:59:30.460
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-01-15 16:06:08.019
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+  [+] /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/jrt-fs.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)

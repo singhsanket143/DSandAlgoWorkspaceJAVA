@@ -56,8 +56,8 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSpinnerUI"/>
     <fullyQualifiedTypeName name="janChallenge.merge"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

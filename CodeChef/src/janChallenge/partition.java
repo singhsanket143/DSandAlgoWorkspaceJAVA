@@ -22,7 +22,6 @@ public class partition {
 
 	public static void part(long x, int n) {
 		long sum = ((long)(n) * (n + 1)) / 2;
-
 		sum -= x;
 		System.out.println(sum);
 		if (sum % 2 != 0 || sum == 0) {
