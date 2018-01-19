@@ -159,8 +159,7 @@ public class graph {
 			}
 			result.add(a);
 		}
-		return result;
-		
+		return result;	
 	}
 
 }
