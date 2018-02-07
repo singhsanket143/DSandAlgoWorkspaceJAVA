@@ -17,18 +17,6 @@ public class textJustification {
         System.out.println(justify(words1, w));
 //        System.out.println(duration());
 	}
-	
-	public static long startTime = 0;
-	public static long endTime = 0;
-
-	public static void init() {
-		startTime = System.currentTimeMillis();
-	}
-
-	public static long duration() {
-		endTime = System.currentTimeMillis();
-		return endTime - startTime;
-	}
 
 	public static String justify(String[] words, int width) {
 		int[][] cost = new int[words.length][words.length];

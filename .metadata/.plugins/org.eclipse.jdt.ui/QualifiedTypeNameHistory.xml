@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="longestConsecutiveSubsequence"/>
-    <fullyQualifiedTypeName name="hailstoneNumber"/>
     <fullyQualifiedTypeName name="extendedEuclid.Triplet"/>
     <fullyQualifiedTypeName name="sachinAndVarun"/>
     <fullyQualifiedTypeName name="Lecture33.queuesandstacks.duplicateparenthesis"/>
@@ -42,9 +38,7 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="janChallenge.kconcat"/>
     <fullyQualifiedTypeName name="janChallenge.KillingMonsters"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSpinnerUI"/>
     <fullyQualifiedTypeName name="janChallenge.merge"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
@@ -52,12 +46,18 @@
     <fullyQualifiedTypeName name="DP.jobScheduling.jobs"/>
     <fullyQualifiedTypeName name="DP.jobScheduling.finishComparator"/>
     <fullyQualifiedTypeName name="DP.jobScheduling"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="graphs.graph3"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray"/>
+    <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray.Node"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="Tries.XorMaxPair.trieNode"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Tries.XorMaxPair"/>
 </qualifiedTypeNameHistroy>

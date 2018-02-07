@@ -95,7 +95,88 @@ public class Trie {
 		}
 		return this.searchWord(child, ros);
 	}
+	
+	public String longestMatchingrefix(String pattern) {
+		return this.longestMatchingrefix(this.root, pattern, "");
+	}
+	
+	private String longestMatchingrefix(Node parent, String pattern, String result) {
+		if(pattern.length() == 0) {
+			return result;
+		}
+		Character ch = pattern.charAt(0);
+		String ros = pattern.substring(1);
+		Node child = parent.Children.get(ch);
+		if( child == null) {
+			return result;
+		}
+		return this.longestMatchingrefix(child, ros, result+ch);
+	}
+	
+	public String longestCommonPrefix() {
+		return this.longestCommonPrefix(this.root);
+	}
+	
+	private String longestCommonPrefix(Node parent) {
+		Node curr = parent;
+		String result = "";
+		while(curr.Children.size() == 1) {
+			for(int i=0;i<26;i++) {
+				Node temp=curr.Children.get((char)('a'+i));
+				if(temp == null) {
+					continue;
+				} else {
+					curr=temp;
+					result+=curr.data;
+					break;
+				}
+			}
+		}
+		return result;
+	}
 
+	public void palindromicPair(String[] arr) {
+		for(int i=0;i<arr.length;i++) {
+			if(this.palindromicPair(this.root, arr[i], "")) {
+				System.out.println(arr[i]);
+				System.out.println("*****");
+			} else {
+				StringBuilder sb = new StringBuilder();
+				for(int j=arr[i].length()-1;j>=0;j--) {
+					sb.append(arr[i].charAt(j));
+				}
+				if(this.palindromicPair(this.root, sb.toString(), "")) {
+					System.out.println(sb.toString());
+					System.out.println("*****");
+				}
+			}
+		}
+	}
+	
+	private boolean palindromicPair(Node parent, String word, String result) {
+		if(word.length()==0) {
+			if(parent.isTerminal) {
+				System.out.println(result);
+				return true;
+			}
+			return false;
+		}
+		Character ch = word.charAt(0);
+		String ros = word.substring(1);
+		Node child = parent.Children.get(ch);
+		if(child ==  null) {
+			return false;
+		}
+		if(child.isTerminal) {
+			for(int j=0;j<ros.length()/2;j++) {
+				if(ros.charAt(j)==ros.charAt(ros.length()-j-1)) {
+					System.out.println(result+ch);
+					return true;
+				}
+			}
+		}
+		return this.palindromicPair(child, ros, result+ch);
+	}
 	public void remove(String word) {
 		this.remove(this.root, word);
 	}

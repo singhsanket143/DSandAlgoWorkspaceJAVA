@@ -18,7 +18,7 @@ public class MaxContiguousSubarray {
 //			for (int i = 0; i < n; i++) {
 //				arr[i] = scn.nextInt();
 //			}
-			System.out.println(maxSubarray(arr));
+			printmaxSubarray(arr);
 //			printmaxSubarray(arr);
 		}
 		
@@ -49,9 +49,11 @@ public class MaxContiguousSubarray {
 				li = i;
 			}
 		}
+		int r=0;
 		for (int i = si; i <= li; i++) {
-			System.out.print(arr[i] + " ");
+			r+=arr[i];
 		}
+		System.out.println(r);
 	}
 
 }

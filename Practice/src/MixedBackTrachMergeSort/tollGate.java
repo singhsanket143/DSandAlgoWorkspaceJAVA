@@ -1,7 +1,8 @@
 package MixedBackTrachMergeSort;
+
 import java.util.Scanner;
 
-public class tollGate {
+public class tollgate {
 
 	public static void main(String[] args) {
 
