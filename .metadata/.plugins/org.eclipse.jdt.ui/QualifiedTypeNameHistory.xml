@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="extendedEuclid.Triplet"/>
-    <fullyQualifiedTypeName name="sachinAndVarun"/>
-    <fullyQualifiedTypeName name="Lecture33.queuesandstacks.duplicateparenthesis"/>
-    <fullyQualifiedTypeName name="LinkedList.LinkedList"/>
-    <fullyQualifiedTypeName name="divisibleby41"/>
     <fullyQualifiedTypeName name="javax.swing.SpringLayout.Constraints"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
@@ -26,7 +21,6 @@
     <fullyQualifiedTypeName name="fenwickTree.coderRating.coder"/>
     <fullyQualifiedTypeName name="fenwickTree.coderRating"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="SegmentTree.SegmentTreeEvenOdd.OddEven"/>
     <fullyQualifiedTypeName name="SegmentTree.SegmentTreeMaxSumPair"/>
     <fullyQualifiedTypeName name="SegmentTree.SegmentTreeMaxSumPair.node"/>
@@ -46,8 +40,6 @@
     <fullyQualifiedTypeName name="DP.jobScheduling.jobs"/>
     <fullyQualifiedTypeName name="DP.jobScheduling.finishComparator"/>
     <fullyQualifiedTypeName name="DP.jobScheduling"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="graphs.graph3"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -56,8 +48,16 @@
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray"/>
     <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray.Node"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="Tries.XorMaxPair.trieNode"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Tries.XorMaxPair"/>
+    <fullyQualifiedTypeName name="Tries.SeachEngine.trieNode"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Tries.helpPradyumana"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="Lecture31.Trie"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="Tries.Trie_Anagram"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="Tries.Boggle"/>
 </qualifiedTypeNameHistroy>

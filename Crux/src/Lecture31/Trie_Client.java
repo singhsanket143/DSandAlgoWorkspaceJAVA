@@ -5,7 +5,6 @@ public class Trie_Client {
 	public static void main(String[] args) {
 
 		Trie trie = new Trie();
-		Trie t1 = new Trie();
 		// trie.addword("111");
 		// trie.addword("011");
 //		trie.addword("geeksforgeeks");
@@ -28,7 +27,6 @@ public class Trie_Client {
 				sb.append(arr[i].charAt(j));
 			}
 			trie.addword(sb.toString());
-			t1.addword(arr[i]);
 		}
 		trie.palindromicPair(arr);
 		// trie.displayAstree();
