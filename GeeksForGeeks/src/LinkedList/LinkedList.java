@@ -352,24 +352,24 @@ public class LinkedList {
 	}
 
 	public void appendLastN(int n) throws Exception {
-		n=n%this.size;
-		Node temp=this.getNodeAt(this.size-n+1);
-		LinkedList result=new LinkedList();
-		while(temp!=null){
+		n = n % this.size;
+		Node temp = this.getNodeAt(this.size - n + 1);
+		LinkedList result = new LinkedList();
+		while (temp != null) {
 			result.addLast(temp.data);
-			temp=temp.next;
+			temp = temp.next;
 		}
-		Node start=this.head;
-		Node end=this.getNodeAt(this.size-n);
-		while(start.next!=end){
+		Node start = this.head;
+		Node end = this.getNodeAt(this.size - n);
+		while (start.next != end) {
 			result.addLast(start.data);
-			start=start.next;
+			start = start.next;
 		}
-		this.head=result.head;
-		this.tail=result.tail;
-		
+		this.head = result.head;
+		this.tail = result.tail;
 
 	}
+
 	public void oddeven() {
 		this.oddeven(this.head);
 		Node temp = this.getNodeAt(this.size - 1);
@@ -527,8 +527,6 @@ public class LinkedList {
 		}
 	}
 
-	
-
 	public void deleteNodeWithoutUsingHead(int idx) {
 		this.deleteNodeWithoutUsingHead(this.getNodeAt(idx));
 	}
@@ -547,5 +545,66 @@ public class LinkedList {
 			counter++;
 		}
 		return node;
+	}
+
+	public LinkedList merge(LinkedList other) {
+		LinkedList rv = new LinkedList();
+		Node otherTemp = other.head;
+		Node thisTemp = this.head;
+		while (otherTemp != null && thisTemp != null) {
+			if (thisTemp.data < otherTemp.data) {
+				rv.addLast(thisTemp.data);
+				thisTemp = thisTemp.next;
+			} else {
+				rv.addLast(otherTemp.data);
+				otherTemp = otherTemp.next;
+			}
+		}
+		while (otherTemp != null) {
+			rv.addLast(otherTemp.data);
+			otherTemp = otherTemp.next;
+		}
+		while (thisTemp != null) {
+			rv.addLast(thisTemp.data);
+			thisTemp = thisTemp.next;
+		}
+		return rv;
+	}
+
+	public void mergeSort() {
+
+		LinkedList sorted = this.mergeSortHelper();
+		this.head = sorted.head;
+		this.tail = sorted.tail;
+		this.size = sorted.size;
+	}
+
+	private LinkedList mergeSortHelper() {
+		if(this.size==1) {
+			return this;
+		}
+		LinkedList fhalf = new LinkedList();
+		LinkedList shalf = new LinkedList();
+		Node mid = this.midnode();
+		Node midNext = mid.next;
+		fhalf.head = this.head;
+		fhalf.tail = mid;
+		fhalf.tail.next = null;
+		fhalf.size = (this.size + 1) / 2;
+		shalf.head = midNext;
+		shalf.tail = this.tail;
+		shalf.size = this.size / 2;
+		fhalf = fhalf.mergeSortHelper();
+		shalf = shalf.mergeSortHelper();
+		LinkedList sorted = fhalf.merge(shalf);
+		return sorted;
+	}
+	
+	public void removeDuplicates() {
+		this.removeDuplicates(this.head);
+	}
+	
+	private void removeDuplicates(Node node) {
+		
 	}
 }

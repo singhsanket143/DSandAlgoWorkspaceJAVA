@@ -31,13 +31,13 @@ public class jobScheduling {
 
 	public static void main(String[] args) {
 		jobScheduling s=new jobScheduling();
-		jobs jobs[] = new jobs[6];
-        jobs[0] = s.new jobs(1,3,5);
-        jobs[1] = s.new jobs(2,5,6);
-        jobs[2] = s.new jobs(4,6,5);
-        jobs[3] = s.new jobs(6,7,4);
-        jobs[4] = s.new jobs(5,8,11);
-        jobs[5] = s.new jobs(7,9,2);
+		jobs jobs[] = new jobs[4];
+        jobs[0] = s.new jobs(3, 10, 20);
+        jobs[1] = s.new jobs(1, 2, 50);
+        jobs[2] = s.new jobs(6, 19, 100);
+        jobs[3] = s.new jobs(2, 100, 200);
+//        jobs[4] = s.new jobs(5,8,11);
+//        jobs[5] = s.new jobs(7,9,2);
         System.out.println(jobSchedule(jobs));
 	}
 	
@@ -47,9 +47,9 @@ public class jobScheduling {
 		int[] dp = new int[jobs.length];
 		dp[0]=jobs[0].profit;
 		Arrays.sort(jobs, f);
-		for(int i=1;i<jobs.length;i++) {
+		for(int i=0;i<jobs.length;i++) {
 			dp[i]=Math.max(dp[0],jobs[i].profit);
-			for(int j=0;j<i;j++) {
+			for(int j=0;j<=i;j++) {
 				if(jobs[i].start>=jobs[j].end) {
 					dp[i]=Math.max(jobs[i].profit+dp[j],dp[i]);
 				}

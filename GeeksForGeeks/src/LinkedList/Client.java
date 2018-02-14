@@ -16,7 +16,8 @@ public class Client {
 		System.out.println();
 //		list.fold();
 //		System.out.println();
-		list.appendLastN(7);
+		//list.appendLastN(7);
+		list.mergeSort();
 		list.display();
 //		System.out.println();
 //		System.out.println(list.kthItemfromLastIterative(1));

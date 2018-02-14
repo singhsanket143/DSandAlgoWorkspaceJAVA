@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class recurrsioncontinued {
 
 	public static void main(String[] args) {
-		 maxsumsubarray(new int[] { -18, 1, 3, 5, -5, 6 });
-//		ArrayList<String> a = getNqueens(4);
+//		 maxsumsubarray(new int[] { -18, 1, 3, 5, -5, 6 });
+//		ArrayList<String> a = getNqueens(10);
 //		System.out.println(a);
+		System.out.println(countNquens(12));
 		// int[] arr = { 3, 5, 0, 2, 1, 4 };
 		// inverseArray(arr, 0);
 		// for (int i = 0; i < arr.length; i++) {
