@@ -5,6 +5,7 @@ public class BinaryTreeClient {
 	public static void main(String[] args) {
 		BinaryTree bt = new BinaryTree();
 		bt.display();
+		
 //		System.out.println(bt.min());
 //		System.out.println(bt.size2());
 //		System.out.println(bt.find(5));

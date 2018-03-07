@@ -580,7 +580,7 @@ public class LinkedList {
 	}
 
 	private LinkedList mergeSortHelper() {
-		if(this.size==1) {
+		if (this.size == 1) {
 			return this;
 		}
 		LinkedList fhalf = new LinkedList();
@@ -599,12 +599,76 @@ public class LinkedList {
 		LinkedList sorted = fhalf.merge(shalf);
 		return sorted;
 	}
-	
-	public void removeDuplicates() {
-		this.removeDuplicates(this.head);
+
+	public int checkRotation() {
+		return this.checkRotation(this.head);
 	}
-	
-	private void removeDuplicates(Node node) {
-		
+
+	private int checkRotation(Node node) {
+		int counter = 1;
+		while (node.next != null && node.next.data > node.data) {
+			node = node.next;
+			counter++;
+		}
+		return counter;
 	}
+
+	public void pairwiseSwap() {
+		this.pairwiseSwap(this.head);
+	}
+
+	private void pairwiseSwap(Node node) {
+		while (node != null && node.next != null) {
+			int temp = node.data;
+			node.data = node.next.data;
+			node.next.data = temp;
+			node = node.next.next;
+		}
+	}
+
+	public LinkedList intersectionOfSortedLists(LinkedList one, LinkedList two) {
+		LinkedList result = new LinkedList();
+		result.head = intersectionOfSortedLists(one.head, two.head);
+		Node temp = result.head;
+		while (temp != null) {
+			if (temp.next == null) {
+				result.tail = temp;
+			}
+			temp = temp.next;
+			result.size++;
+		}
+		return result;
+
+	}
+
+	private Node intersectionOfSortedLists(Node one, Node two) {
+		if (one == null || two == null) {
+			return null;
+		}
+		if (one.data < two.data) {
+			return intersectionOfSortedLists(one.next, two);
+		}
+		if (two.data < one.data) {
+			return intersectionOfSortedLists(one, two.next);
+		}
+		Node temp = new Node(one.data, null);
+		temp.next = intersectionOfSortedLists(one.next, two.next);
+		return temp;
+	}
+
+	public void deleteAlternateNode() {
+		this.deleteAlternateNode(this.head);
+	}
+
+	private void deleteAlternateNode(Node node) {
+		while (node !=null && node.next!=null) {
+			Node prev = node;
+			Node next = node.next;
+			Node nexter = node.next.next;
+			prev.next = nexter;
+			next.next = null;
+			node = node.next;
+		}
+	}
+
 }

@@ -1,5 +1,6 @@
 package Lecture17;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,6 +10,7 @@ public class time_and_space_complexity_1 {
 		// System.out.println(getpv(3, 2));
 		Scanner scn=new Scanner(System.in);
 		System.out.println(countpalindromicss(scn.next()));
+		
 		// printprimesoe(100000000);
 //		String str="a";
 //		str.charAt(0);

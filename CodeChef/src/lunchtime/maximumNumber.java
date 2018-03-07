@@ -11,36 +11,28 @@ public class maximumNumber {
 		int t = scn.nextInt();
 		while (t-- > 0) {
 			String str = scn.next();
-			StringBuilder sb = new StringBuilder(str);
-			BigInteger b = new BigInteger(str);
-
-			System.out.println(maxNumber(sb, b));
+			System.out.println(maxNumber(str));
 		}
 	}
 
-	public static BigInteger maxNumber(StringBuilder sb, BigInteger b) {
-		BigInteger six = new BigInteger("6");
-		BigInteger zero = new BigInteger("0");
-		if(b.mod(six).equals(zero))
-			return b;
-		
-//		int temp = -1;
-		BigInteger t3 = new BigInteger("-1");
-		for (int i = sb.length() - 1; i >= 0; i--) {
-			String res = sb.substring(0, i) + sb.substring(i + 1);
-			BigInteger t=new BigInteger(res);
-//			int t1 = Integer.parseInt(res, 10);
-			if (t.mod(six).equals(zero)) {
-				if (t.compareTo(t3)==1) {
-//					temp = t1;
-					t3=t;
+	public static String maxNumber(String s) {
+		int n = s.length();
+		int sum = 0;
+		for (int i = 0; i < s.length(); i++) {
+			sum += s.charAt(i) - '0';
+			sum = sum % 3;
+		}
+		int lpos = -1;
+		for (int i = 0; i < n; i++) {
+			int k=(i==n-1)?1:0;
+			if((s.charAt(i)-'0')%3==sum && (s.charAt(n-1-k)-'0')%2==0) {
+				lpos = i;
+				if(i+1<n&& s.charAt(i)<s.charAt(i+1)) {
+					break;
 				}
 			}
-
 		}
-		return t3;
+		return (lpos==-1)?"-1":s.substring(0, lpos)+s.substring(lpos+1);
 	}
-
-	
 
 }
