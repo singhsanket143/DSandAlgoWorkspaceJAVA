@@ -10,9 +10,11 @@ public class randomgenerator {
 		int n=scn.nextInt();
 		Random rand=new Random();
 		for(int i=1;i<=n;i++){
-			int temp1=rand.nextInt(1000000)+2;
-//			int temp2=rand.nextInt(100)+1;
-			System.out.println(temp1);
+			int temp2=rand.nextInt(10000)+1;
+			int temp = rand.nextInt(1000) + 1 ;
+			int temp1 = rand.nextInt(temp) + 1;
+			System.out.println(1 + " " +temp1 +" " + temp + " " +temp2);
+//			System.out.println(0 + " " + temp);
 			
 		}
 

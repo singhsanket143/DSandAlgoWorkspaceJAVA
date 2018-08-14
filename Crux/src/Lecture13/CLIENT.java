@@ -13,16 +13,16 @@ public class CLIENT {
 		// System.out.println(getMPWDiag(2, 2, 0, 0));
 		// printmpwdiag(2, 2, 0, 0," ");
 		// permutation("123", "");
-		// printss("abcd", "");
+//		 printss("abcd", "");
 		// System.out.println(getSubSequence("abcd"));
 		// printssWASCII("abc", "");
 		// printssWASCII("abc", "");
-		int[] arr = { 15, 20 };
-		System.out.println(getsubset(arr, 0));
-		// System.out.println(keyPadComb("1123"));
+//		int[] arr = { 15, 20 };
+//		System.out.println(getsubset(arr, 0));
+//		 System.out.println(keyPadComb("1123"));
 		// System.out.println(getPermutation("aba"));
 		// printmpwdiag(2, 2, 0, 0, "");
-		// System.out.println(getMazepathDiagonal(0, 0, 2, 2));
+		 System.out.println(countmazepathWdiagonal(2, 2, 0, 0));
 	}
 
 	public static ArrayList<String> getboardpath(int size, int current) {

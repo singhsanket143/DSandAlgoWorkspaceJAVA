@@ -23,9 +23,9 @@ public class tnsdemos {
 //		 int[s1.length()+1][s2.length()+1]));
 		// System.out.println("duration is "+duration());
 //		int n = 28;
-		int[] val = {10,20,30,25};
-		int[] wts = {1,1,1,1};
-		int tw =5 ;
+		int[] val = {60,100,120};
+		int[] wts = {10,20,30};
+		int tw =50;
 //		Random random = new Random();
 //		for (int i = 0; i < val.length; i++) {
 //			val[i] = random.nextInt(100);
@@ -34,7 +34,7 @@ public class tnsdemos {
 //		}
 //		init();
 		int[][] strg=new int[tw + 1][val.length];
-		System.out.println(knapsackbtr(val, wts, 3, 0, strg));
+		System.out.println(knapsackbtr(val, wts, tw, 0, strg));
 //		System.out.println("duration is " + duration());
 //		init();
 //		System.out.println(knapsack(val, wts, tw, 0));

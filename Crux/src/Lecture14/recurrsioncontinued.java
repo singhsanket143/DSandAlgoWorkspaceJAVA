@@ -135,7 +135,6 @@ public class recurrsioncontinued {
 			if (isitsafetpq(board, row, col)) {
 				board[row][col] = true;
 				printNqueens(board, row + 1, osf + "{" + row + "-" + col + "}");
-
 				board[row][col] = false;
 			}
 		}

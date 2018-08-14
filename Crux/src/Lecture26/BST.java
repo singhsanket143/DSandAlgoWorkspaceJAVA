@@ -17,6 +17,7 @@ public class BST {
 
 	private Node root;
 	private int size;
+	private int counter;// for counting bst that lie in a range
 
 	public BST(int... sa) {
 		this.root = this.construct(sa, 0, sa.length - 1);
@@ -386,7 +387,7 @@ public class BST {
 		if (node == null) {
 			return;
 		}
-		System.out.print(node.data + ",");
+		System.out.print(node.data + " ");
 		preorder(node.left);
 		preorder(node.right);
 	}
@@ -417,7 +418,7 @@ public class BST {
 		}
 
 		inorder(node.left);
-		System.out.print(node.data + ",");
+		System.out.print(node.data + " ");
 		inorder(node.right);
 
 	}
@@ -561,6 +562,244 @@ public class BST {
 		mypair.diameter = Math.max(f1, Math.max(f2, f3));
 		return mypair;
 
+	}
+
+	public void printNodesSumToS(int s) {
+		this.printNodesSumToS(this.root, s);
+	}
+
+	private int countNodes(Node root) {
+		if (root == null) {
+			return 0;
+		}
+		return countNodes(root.left) + countNodes(root.right) + 1;
+	}
+
+	private void printNodesSumToS(Node node, int s) {
+		if (node == null) {
+			return;
+		}
+		int totalCount = countNodes(root);
+		int count = 0;
+		Stack<Node> inorder = new Stack();
+		Stack<Node> reorder = new Stack();
+		Node temp = node;
+		while (temp != null) {
+			inorder.push(temp);
+			temp = temp.left;
+		}
+		temp = node;
+		while (temp != null) {
+			reorder.push(temp);
+			temp = temp.right;
+		}
+		while (count < totalCount - 1) {
+			Node top1 = inorder.peek();
+			Node top2 = reorder.peek();
+			if (top1.data + top2.data == s) {
+				System.out.println(top1.data + " " + top2.data);
+				Node top = top1;
+				inorder.pop();
+				count++;
+				if (top.right != null) {
+					top = top.right;
+					while (top != null) {
+						inorder.push(top);
+						top = top.left;
+					}
+				}
+				top = top2;
+				reorder.pop();
+				count++;
+				if (top.left != null) {
+					top = top.left;
+					while (top != null) {
+						reorder.push(top);
+						top = top.right;
+					}
+				}
+			} else if (top1.data + top2.data > s) {
+				Node top = top2;
+				reorder.pop();
+				count++;
+				if (top.left != null) {
+					top = top.left;
+					while (top != null) {
+						reorder.push(top);
+						top = top.right;
+					}
+				}
+			} else {
+				Node top = top1;
+				inorder.pop();
+				count++;
+				if (top.right != null) {
+					top = top.right;
+					while (top != null) {
+						inorder.push(top);
+						top = top.left;
+					}
+				}
+			}
+		}
+	}
+
+	public void modifyBST() {
+		int[] arr = { 0 };
+		this.modifyBSTwithgreaterelementssum(this.root, arr);
+	}
+
+	private void modifyBSTwithgreaterelementssum(Node node, int[] sum) {
+		if (node == null)
+			return;
+		modifyBSTwithgreaterelementssum(node.right, sum);
+		sum[0] += node.data;
+		node.data = sum[0];
+		modifyBSTwithgreaterelementssum(node.left, sum);
+	}
+
+	private void insertWithGettingInordersucc(Node node, int data, Node succ) {
+		if (node == null) {
+			node = new Node(data, null, null);
+		}
+		if (data < node.data) {
+			succ = node;
+			insertWithGettingInordersucc(node.left, data, succ);
+		} else if (data > node.data) {
+			insertWithGettingInordersucc(node.right, data, succ);
+		}
+	}
+
+	public int findMedian() {
+		return this.findMedian(this.root);
+	}
+
+	private void morrisInordertraversal(Node node) {
+		Node current, pre;
+		if (root == null) {
+			return;
+		}
+		current = root;
+		while (current != null) {
+			if (current.left == null) {
+				System.out.print(current.data + " ");
+				current = current.right;
+			} else {
+				pre = current.left;
+				while (pre.right != null && pre.right != current) {
+					pre = pre.right;
+				}
+				if (pre.right == null) {
+					pre.right = current;
+					current = current.left;
+				} else {
+					pre.right = null;
+					System.out.print(current.data + " ");
+					current = current.right;
+				}
+			}
+		}
+	}
+
+	private int countNodesUsingMorris(Node node) {
+		Node current, pre;
+		int count = 0;
+		if (root == null) {
+			return count;
+		}
+		current = root;
+		while (current != null) {
+			if (current.left == null) {
+				count++;
+				// System.out.print(current.data + " ");
+				current = current.right;
+			} else {
+				pre = current.left;
+				while (pre.right != null && pre.right != current) {
+					pre = pre.right;
+				}
+				if (pre.right == null) {
+					pre.right = current;
+					current = current.left;
+				} else {
+					pre.right = null;
+					// System.out.print(current.data + " ");
+					count++;
+					current = current.right;
+				}
+			}
+		}
+		return count;
+	}
+
+	private int findMedian(Node node) {
+		Node current, pre, prev = new Node(0, null, null);
+		if (root == null) {
+			return 0;
+		}
+		int count = this.countNodes(node);
+		int currCount = 0;
+		current = root;
+		while (current != null) {
+			if (current.left == null) {
+				// System.out.print(current.data + " ");
+				currCount++;
+				if (count % 2 != 0 && currCount == (count + 1) / 2) {
+					return prev.data;
+				} else if (count % 2 == 0 && currCount == ((count) / 2) + 1) {
+					return (prev.data + current.data) / 2;
+				}
+				prev = current;
+				current = current.right;
+			} else {
+				pre = current.left;
+				while (pre.right != null && pre.right != current) {
+					pre = pre.right;
+				}
+				if (pre.right == null) {
+					pre.right = current;
+					current = current.left;
+				} else {
+					pre.right = null;
+					prev = pre;
+					// System.out.print(current.data + " ");
+					currCount++;
+					if (count % 2 != 0 && currCount == (count + 1) / 2) {
+						return current.data;
+					} else if (count % 2 == 0 && currCount == ((count) / 2) + 1) {
+						return (prev.data + current.data) / 2;
+					}
+					prev = current;
+					current = current.right;
+				}
+			}
+		}
+		return -1;
+	}
+
+	public int findSubtrees(int min, int max) {
+		findSubtrees(this.root, min, max);
+		
+		return counter;
+	}
+
+	private boolean findSubtrees(Node node, int min, int max) {
+		if (node == null) {
+			return true;
+		}
+		boolean l = (node.left!=null)?(findSubtrees(node.left, min, max)):true;
+		boolean r = (node.right!=null)?(findSubtrees(node.right, min, max)):true;
+		
+		if(l & r & currentIsInRange(node.data, min, max)) {
+			++counter;
+			return true;
+		}
+		return false;
+	}
+
+	private boolean currentIsInRange(int key, int min, int max) {
+		// TODO Auto-generated method stub
+		return key >= min && key <= max;
 	}
 
 }

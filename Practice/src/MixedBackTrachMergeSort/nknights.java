@@ -10,7 +10,7 @@ public class nknights {
 
 		int N = scn.nextInt();
 		System.out.println("Count of possible configuration is "+countNKnights(new boolean[N][N], 0, 0, 0));
-		printNKnights(new boolean[N][N], 0, 0, 0, "");
+//		printNKnights(new boolean[N][N], 0, 0, 0, "");
 	}
 
 	public static int countNKnights(boolean[][] board, int placed, int sr, int sc) {
