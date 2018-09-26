@@ -26,7 +26,7 @@ public class recursionAssignment {
 		 char[] arr = { 'a', 'b', 'c', 'd', 'e', 'f','g','h','i', 'j', 'k',
 		 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
 		 'w', 'x', 'y', 'z' };
-		 printCodes("1123", "", arr);
+		 printCodes("121", "", arr);
 		// printinparenthesis("cde(abc)def", "", false);
 		// System.out.println(checkbalancedbrackets(")a+b(", ""));
 		// int[] arr = { 5, 6, 1, 4, 3, 9, 7, 2, 4 };

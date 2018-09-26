@@ -29,14 +29,14 @@ public class fibonacciLogN {
 	}
 
 	public static void multiply(int[][] A, int[][] M) {
-		int fvalue=A[0][0]*M[0][0]+A[0][1]*M[1][0];
-		int svalue=A[0][0]*M[1][0]+A[0][1]*M[1][1];
-		int tvalue=A[1][0]*M[0][0]+A[1][1]*M[1][0];
-		int lvalue=A[1][0]*M[0][1]+A[1][1]*M[1][1];
-		A[0][0]=fvalue;
-		A[0][1]=svalue;
-		A[1][0]=tvalue;
-		A[1][1]=lvalue;
+		int fvalue = A[0][0] * M[0][0] + A[0][1] * M[1][0];
+		int svalue = A[0][0] * M[1][0] + A[0][1] * M[1][1];
+		int tvalue = A[1][0] * M[0][0] + A[1][1] * M[1][0];
+		int lvalue = A[1][0] * M[0][1] + A[1][1] * M[1][1];
+		A[0][0] = fvalue;
+		A[0][1] = svalue;
+		A[1][0] = tvalue;
+		A[1][1] = lvalue;
 	}
 
 }

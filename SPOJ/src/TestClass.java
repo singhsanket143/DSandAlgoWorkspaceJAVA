@@ -1,13 +1,48 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class TestClass {
-	public static void main(String[] args) {
-		Random ran = new Random();
-		char arr[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-		for(int i=0;i<100000;i++) {
-			System.out.print(arr[(ran.nextInt(26))]);
-		}
+interface areashape {
+	void calarea();
+}
+
+class rectangle implements areashape {
+	int a, b;
+
+	void getsides(int a, int b) {
+		this.a = a;
+		this.b = b;
 	}
 
+	@Override
+	public void calarea() {
+		int area = a * b;
+		System.out.println("sides of rectangle are side 1 = " + a + " side 2 = " + b + " area = " + area);
+	}
+}
+
+class circle implements areashape {
+	int r;
+
+	void getradius(int r) {
+		this.r = r;
+	}
+
+	@Override
+	public void calarea() {
+		double area = 3.14 * r * r;
+		System.out.println("radius of the circle = " + r + " area = " + area);
+	}
+
+}
+
+class TestClass{
+
+	public static void main(String args[]) {
+		rectangle obj = new rectangle();
+		obj.getsides(3, 4);
+		obj.calarea();
+		circle obj1 = new circle();
+		obj1.getradius(3);
+		obj1.calarea();
+	}
 }

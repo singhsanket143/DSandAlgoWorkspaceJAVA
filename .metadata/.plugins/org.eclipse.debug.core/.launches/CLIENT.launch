@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/GeeksForGeeks/src/LinkedList/Client.java"/>
+        <listEntry value="/Crux/src/HashTableGui/Client.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="LinkedList.Client"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="GeeksForGeeks"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="HashTableGui.Client"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Crux"/>
 </launchConfiguration>

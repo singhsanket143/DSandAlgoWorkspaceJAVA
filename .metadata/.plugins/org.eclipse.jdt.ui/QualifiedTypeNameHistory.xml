@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="graphs.graph3"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray"/>
     <fullyQualifiedTypeName name="SegmentTree.MaxSumInASubarray.Node"/>
     <fullyQualifiedTypeName name="Tries.XorMaxPair.trieNode"/>
@@ -41,7 +38,6 @@
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="graphs.Kruskals.Edge"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="Lecture25.BinaryTree.Info"/>
     <fullyQualifiedTypeName name="Lecture25.BinaryTree.Node"/>
@@ -53,11 +49,15 @@
     <fullyQualifiedTypeName name="greedy.maxmin"/>
     <fullyQualifiedTypeName name="TwoPointer.productExceptSelf"/>
     <fullyQualifiedTypeName name="A.B"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="story1.Person"/>
+    <fullyQualifiedTypeName name="story2.student"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
