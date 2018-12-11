@@ -1,48 +1,72 @@
-import java.util.Random;
-import java.util.Scanner;
 
-interface areashape {
-	void calarea();
-}
-
-class rectangle implements areashape {
-	int a, b;
-
-	void getsides(int a, int b) {
-		this.a = a;
-		this.b = b;
+public class TestClass {
+	public static void main(String[] args) {
+		int sol[] = { 10, 13, 12, 14, 15 };
+		System.out.println(solution(sol, 5));
 	}
 
-	@Override
-	public void calarea() {
-		int area = a * b;
-		System.out.println("sides of rectangle are side 1 = " + a + " side 2 = " + b + " area = " + area);
-	}
-}
+	public static int solution(int arr[], int n) {
+		int result = 1;
 
-class circle implements areashape {
-	int r;
+		int min[] = new int[10005];
+		int max[] = new int[10005];
+		for (int i = 0; i < n; i++) {
+			int max_el = Integer.MAX_VALUE;
+			int max_el_idx = i;
+			for (int j = i + 1; j < n; j++) {
+				if (arr[j] > arr[i] && arr[j] < max_el) {
+					max_el = arr[j];
+					max_el_idx = j;
+				}
+			}
+			if (max_el != Integer.MAX_VALUE) {
+				max[i] = max_el_idx;
+			} else {
+				max[i] = i;
+			}
 
-	void getradius(int r) {
-		this.r = r;
-	}
+		}
+		for (int i = 0; i < n; i++) {
+			int min_el = Integer.MIN_VALUE;
+			;
+			int min_el_idx = i;
+			for (int j = i + 1; j < n; j++) {
+				if (arr[j] < arr[i] && arr[j] > min_el) {
+					min_el = arr[j];
+					min_el_idx = j;
+				}
+			}
+			if (min_el != Integer.MIN_VALUE) {
+				min[i] = min_el_idx;
+			} else {
+				min[i] = i;
+			}
+		}
+		int traversal = 0;
+		for (int i = 0; i < n; i++) {
+			traversal = i;
+			int jump = 1;
+			while (traversal < n) {
+				if (jump % 2 != 0) { // odd jump
+					int temp = traversal;
+					traversal = max[traversal];
+					if (traversal == temp) {
+						break;
+					}
+				} else {
+					int temp = traversal;
+					traversal = min[traversal];
+					if (traversal == temp) {
+						break;
+					}
+				}
+				if (traversal == n - 1) {
+					result++;
+				}
+				jump++;
+			}
+		}
 
-	@Override
-	public void calarea() {
-		double area = 3.14 * r * r;
-		System.out.println("radius of the circle = " + r + " area = " + area);
-	}
-
-}
-
-class TestClass{
-
-	public static void main(String args[]) {
-		rectangle obj = new rectangle();
-		obj.getsides(3, 4);
-		obj.calarea();
-		circle obj1 = new circle();
-		obj1.getradius(3);
-		obj1.calarea();
+		return result;
 	}
 }

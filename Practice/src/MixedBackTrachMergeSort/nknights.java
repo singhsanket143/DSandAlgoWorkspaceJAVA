@@ -10,7 +10,7 @@ public class nknights {
 
 		int N = scn.nextInt();
 		System.out.println("Count of possible configuration is "+countNKnights(new boolean[N][N], 0, 0, 0));
-//		printNKnights(new boolean[N][N], 0, 0, 0, "");
+		printNKnights(new boolean[N][N], 0, 0, 0, "");
 	}
 
 	public static int countNKnights(boolean[][] board, int placed, int sr, int sc) {
@@ -40,7 +40,7 @@ public class nknights {
 		}
 
 		for (int row = sr; row < board.length; row++) {
-			for (int col = (row == sr? sc: 0); col < board.length; col++) {
+			for (int col =(row == sr? sc: 0); col < board.length; col++) {
 				if (board[row][col] == false && isItSafe(board, row, col)) {
 					board[row][col] = true;
 					printNKnights(board, placed + 1, row, col + 1, osf + "{" + row + "-" + col + "}; ");

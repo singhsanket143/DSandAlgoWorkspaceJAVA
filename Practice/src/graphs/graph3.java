@@ -10,7 +10,7 @@ public class graph3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn=new Scanner(System.in);
-		int n=scn.nextInt();
+		int n=100;
 		List<Integer>[] edges =new List[n];
 		for(int i=0;i<edges.length;i++) {
 			edges[i]=new ArrayList();

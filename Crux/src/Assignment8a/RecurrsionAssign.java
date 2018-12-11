@@ -7,8 +7,8 @@ public class RecurrsionAssign {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// lexicoHstring("bcad", "", false);
-		 lexi(0, 100);
+		 lexicoHstring("bcad", "", false);
+//		 lexi(0, 100);
 //		int[] arr = { 5, 12, 1, 18, 6, 3, 17,3 };
 		// printgrouparray1(arr, 0, 0, 0,"","");
 		// System.out.println();

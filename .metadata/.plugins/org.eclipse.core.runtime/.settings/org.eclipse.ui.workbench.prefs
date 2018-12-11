@@ -21,5 +21,5 @@ org.eclipse.e4.ui.css.theme.e4_dark.org.eclipse.ui.workbench.INACTIVE_TAB_UNSELE
 org.eclipse.e4.ui.css.theme.e4_dark.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_END=70,70,73
 org.eclipse.e4.ui.css.theme.e4_dark.org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_START=81,86,88
 org.eclipse.e4.ui.css.theme.e4_dark.org.eclipse.ui.workbench.LINK_COLOR=111,197,238
-org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Monaco|14.0|0|COCOA|1|Monaco;
-org.eclipse.jdt.ui.editors.textfont=1|Monaco|14.0|0|COCOA|1|Monaco;
+org.eclipse.jdt.internal.ui.compare.JavaMergeViewer=1|Monaco|14.0|0|COCOA|1|;
+org.eclipse.jdt.ui.editors.textfont=1|Monaco|14.0|0|COCOA|1|;
