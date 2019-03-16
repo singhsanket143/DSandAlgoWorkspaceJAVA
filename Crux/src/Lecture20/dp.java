@@ -11,7 +11,7 @@ public class dp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// Part 1
-		int N = 100000000;
+//		int N = 100000000;
 		//
 		// ComplexityDemos.startWatch();
 //		 System.out.println(Fib(N));
@@ -29,7 +29,7 @@ public class dp {
 		// for " + N + " items.");
 		//
 		// // Part 2
-		N = 7;
+//		N = 7;
 		//
 //		 ComplexityDemos.startWatch();
 //		 System.out.println(countBoardPaths(N, 0));
@@ -42,8 +42,8 @@ public class dp {
 //		 ComplexityDemos.endWatch() + " for " + N + " items.");
 //		
 //		 ComplexityDemos.startWatch();
-		 System.out.println(countBoardPathsBtr2(19, 0, new int[6]));
-		 System.out.println(countBoardPathIterative(19, new int[19+1]));
+//		 System.out.println(countBoardPathsBtr2(19, 0, new int[6]));
+//		 System.out.println(countBoardPathIterative(19, new int[19+1]));
 //		 System.out.println("countBoardPathsBtr2 took " +
 //		 ComplexityDemos.endWatch() + " for " + N + " items.");
 		//
@@ -56,8 +56,8 @@ public class dp {
 		// ComplexityDemos.endWatch() + " for " + N + " items.");
 		//
 		// ComplexityDemos.startWatch();
-		 System.out.println(countMazePathsBtr(17, 17, 0, 0, new int[17 + 1][17 +
-		 1]));
+//		 System.out.println(countMazePathsBtr(17, 17, 0, 0, new int[17 + 1][17 +
+//		 1]));
 		// System.out.println("countMazePathsBtr took " +
 		// ComplexityDemos.endWatch() + " for " + N + " items.");
 		//
@@ -75,10 +75,10 @@ public class dp {
 		// System.out.println("lcs took " + ComplexityDemos.endWatch());
 		//
 		// ComplexityDemos.startWatch();
-		 String s1="abd5uyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyycb";
-		 String s2="acbd";
-		 System.out.println(lcsBtr(s1, s2, new int[s1.length() +
-		 1][s2.length() + 1]));
+//		 String s1="abd5uyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyycb";
+//		 String s2="acbd";
+//		 System.out.println(lcsBtr(s1, s2, new int[s1.length() +
+//		 1][s2.length() + 1]));
 		// System.out.println("lcsBtr took " + ComplexityDemos.endWatch());
 		//
 //		 ComplexityDemos.startWatch();
@@ -122,9 +122,9 @@ public class dp {
 //		N = 28;
 //		Random rand = new Random();
 //
-//		int[] vals = { 2, 4, 5, 10, 3 };
-//		int[] wts = { 10, 50, 80, 30, 100 };
-//		int wt = 300;
+		int[] vals = { 2, 4, 5, 10, 3 };
+		int[] wts = { 10, 50, 80, 30, 100 };
+		int wt = 30;
 
 		// for (int i = 0; i < vals.length; i++) {
 		// vals[i] = rand.nextInt(30);
@@ -132,7 +132,7 @@ public class dp {
 		// }
 		//
 		// ComplexityDemos.startWatch();
-		// System.out.println(knapSack(vals, wts, wt, 0));
+		 System.out.println(knapSack(vals, wts, wt, 0));
 		// System.out.println("knapSack took " + ComplexityDemos.endWatch());
 		//
 		// ComplexityDemos.startWatch();

@@ -628,5 +628,30 @@ public class BinaryTree {
 		return arr;
 	}
 
+	public int maximumSumPathBetweenTwoLeaves(Node node, int res[]) {
+		
+		if(node==null) {
+			return 0;
+		}
+		if(node.left==null && node.right==null) {
+			return node.data;
+		}
+		int leftAns = maximumSumPathBetweenTwoLeaves(node.left, res);
+		int rightAns = maximumSumPathBetweenTwoLeaves(node.right, res);
+		if(node.left!=null && node.right!=null) {
+			res[0] = Math.max(res[0], leftAns + rightAns + node.data);
+			return Math.max(leftAns, rightAns) + node.data;
+		} else if(node.left!=null) {
+			return leftAns+node.data;
+		} else {
+			return rightAns+node.data;
+		}
+	}
+	
+	public int maximumSumPathBetweenTwoLeavesUtil() {
+		int res[] = {Integer.MIN_VALUE};
+		maximumSumPathBetweenTwoLeaves(this.root, res);
+		return res[0];
+	}
 	
 }

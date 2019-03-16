@@ -8,7 +8,7 @@ public class recurrsioncontinued {
 //		 maxsumsubarray(new int[] { -18, 1, 3, 5, -5, 6 });
 //		ArrayList<String> a = getNqueens(10);
 //		System.out.println(a);
-		System.out.println(countNquens(12));
+		System.out.println(countNquens(4));
 		// int[] arr = { 3, 5, 0, 2, 1, 4 };
 		// inverseArray(arr, 0);
 		// for (int i = 0; i < arr.length; i++) {
